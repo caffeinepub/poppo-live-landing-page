@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "New project",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-in-apppreviewsection-tsx-update-the-become-poppo-agent-cta-button-anchor-element-located-at-xpath-html-1-body-1-div-1-div-1-main-1-section-4-div-4-div-3-button-1-to-display-the-label-join-55028198-lht-and-set-its-href-to-https-invite-vone-com-q8qn2d-opening-in-a-new-tab",
+      "title": "In AppPreviewSection.tsx, update the 'Become Poppo Agent' CTA button/anchor element (located at XPath /html[1]/body[1]/div[1]/div[1]/main[1]/section[4]/div[4]/div[3]/button[1]) to display the label 'Join 55028198 LHT 💖' and set its href to 'https://invite-vone.com/Q8QN2D' (opening in a new tab).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [],
+  "projectName": "Rename CTA button to 'Join 55028198 LHT 💖' with new invite link",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

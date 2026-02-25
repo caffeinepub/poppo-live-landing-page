@@ -1,0 +1,38 @@
+{
+  "kind": "build_request",
+  "title": "Rename CTA button to 'Join 55028198 LHT 💖' with new invite link",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "In AppPreviewSection.tsx, update the 'Become Poppo Agent' CTA button/anchor element (located at XPath /html[1]/body[1]/div[1]/div[1]/main[1]/section[4]/div[4]/div[3]/button[1]) to display the label 'Join 55028198 LHT 💖' and set its href to 'https://invite-vone.com/Q8QN2D' (opening in a new tab).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-recent-1"
+        ],
+        "quotes": [
+          "Rename this Button Join 55028198 LHT 💖",
+          "And use link https://invite-vone.com/Q8QN2D"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The button in the AppPreviewSection displays the text 'Join 55028198 LHT 💖'.",
+        "Clicking the button navigates to 'https://invite-vone.com/Q8QN2D' in a new tab.",
+        "No other buttons or links on the page are modified."
+      ]
+    }
+  ],
+  "constraints": [
+    "Only modify the specific button identified by the XPath in AppPreviewSection — do not change any other CTA buttons or links."
+  ],
+  "nonGoals": [
+    "Updating the HeroSection CTA button.",
+    "Changing Navbar links or WhatsApp buttons.",
+    "Any backend changes."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

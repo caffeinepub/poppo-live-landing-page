@@ -1,0 +1,22 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-25T15:27:15.973Z",
+  "summary": "REQ-1 is implemented in AppPreviewSection.tsx: the CTA button is renamed to 'Join 55028198 LHT 💖' and links to 'https://invite-vone.com/Q8QN2D' opening in a new tab. However, the diff also shows a second anchor tag (download badge) in the same section pointing to the same invite URL, which was not part of the original request.",
+  "missing_requirements": [],
+  "hallucinated_features": [
+    {
+      "description": "A second anchor element (App Store/Google Play download badge) in AppPreviewSection also uses the invite link 'https://invite-vone.com/Q8QN2D', which was not requested by REQ-1.",
+      "reason": "REQ-1 only requested updating the single 'Become Poppo Agent' CTA button. The diff shows an additional download-badge anchor also set to 'https://invite-vone.com/Q8QN2D', which is an unrequested modification.",
+      "evidence": [
+        "frontend/src/components/AppPreviewSection.tsx"
+      ]
+    }
+  ],
+  "confidence": 0.8,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/components/AppPreviewSection.tsx",
+    "project_state.json"
+  ]
+}

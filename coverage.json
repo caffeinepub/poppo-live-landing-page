@@ -1,0 +1,37 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-25T15:27:15.976Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 1,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-1",
+        "summary": "In AppPreviewSection.tsx, update the 'Become Poppo Agent' CTA button/anchor element (located at XPath /html[1]/body[1]/div[1]/div[1]/main[1]/section[4]/div[4]/div[3]/button[1]) to display the label 'Join 55028198 LHT 💖' and set its href to 'https://invite-vone.com/Q8QN2D' (opening in a new tab).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/AppPreviewSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/AppPreviewSection.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/components/AppPreviewSection.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

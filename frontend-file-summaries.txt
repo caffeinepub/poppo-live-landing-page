@@ -1,0 +1,15 @@
+{
+  "frontend/src/App.tsx": "Root application component that assembles the full landing page by composing Navbar, HeroSection, FeaturesSection, AppPreviewSection, HowItWorksSection, StatsSection, and Footer in a dark-themed layout.",
+  "frontend/src/hooks/useScrollPosition.ts": "Custom hook that tracks the window's vertical scroll position using a passive scroll event listener, used for the navbar scroll-aware background transition.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder file for React Query backend hooks; no backend queries are needed for this static landing page.",
+  "frontend/src/components/Navbar.tsx": "Sticky navigation bar with the desktop and mobile WhatsApp buttons updated to `https://wa.me/918000961803` and the Apply Now buttons (desktop and mobile) updated to `https://livehostingtalents.com/apply-now/`, all opening in a new tab via anchor tags.",
+  "frontend/src/components/HeroSection.tsx": "Full-viewport hero section with the primary CTA button renamed to \"Become Poppo Agent\" linking to `https://invite-vone.com/zearDh` (opens in new tab), while the WhatsApp button and App Store/Google Play store buttons remain unchanged.",
+  "frontend/src/components/FeaturesSection.tsx": "Six-card features grid showcasing key app capabilities (Go Live, Earn Rewards, Gifts, Voice Calls, PK Battles, Global Community) with generated icon images and hover gradient accents.",
+  "frontend/src/components/AppPreviewSection.tsx": "Split-layout app preview section with the CTA button renamed to \"Join 55028198 LHT 💖\" linking to `https://invite-vone.com/Q8QN2D` (opens in new tab), above the existing App Store and Google Play download badges.",
+  "frontend/src/components/HowItWorksSection.tsx": "Four-step numbered process section with emoji icons, gradient connecting line, and a final CTA button explaining how to get started with Poppo Live.",
+  "frontend/src/components/StatsSection.tsx": "Community stats section with animated counting numbers (20M+ users, 180+ countries, 50M+ streams, 500K+ creators), a gradient background, and a featured creator testimonial card.",
+  "frontend/src/components/Footer.tsx": "Full footer updated to show the new Poppo logo image with \"Poppo Live Agency\" brand name text, updated copyright to \"Poppo Live Agency\", social icons, link columns, and caffeine.ai attribution.",
+  "frontend/src/index.css": "Global stylesheet defining the OKLCH dark-theme color system with warm brand tokens (pink, red, orange, yellow, purple), Poppins/Inter font imports, gradient text/button utilities, and glow shadow classes.",
+  "frontend/tailwind.config.js": "Extended Tailwind configuration adding Poppins/Inter font families, brand color tokens mapped to OKLCH CSS variables, custom border radii, glow box shadows, and float/gradient-shift keyframe animations.",
+  "frontend/index.html": "HTML entry point with page title \"Poppo Live Agency\", meta description (apostrophe properly escaped as &apos;), and og:site_name meta tag."
+}
