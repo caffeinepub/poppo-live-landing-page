@@ -7,8 +7,8 @@
   "isFixRequest": false,
   "existing_features": [
     {
-      "id": "feature-in-apppreviewsection-tsx-update-the-become-poppo-agent-cta-button-anchor-element-located-at-xpath-html-1-body-1-div-1-div-1-main-1-section-4-div-4-div-3-button-1-to-display-the-label-join-55028198-lht-and-set-its-href-to-https-invite-vone-com-q8qn2d-opening-in-a-new-tab",
-      "title": "In AppPreviewSection.tsx, update the 'Become Poppo Agent' CTA button/anchor element (located at XPath /html[1]/body[1]/div[1]/div[1]/main[1]/section[4]/div[4]/div[3]/button[1]) to display the label 'Join 55028198 LHT 💖' and set its href to 'https://invite-vone.com/Q8QN2D' (opening in a new tab).",
+      "id": "feature-in-howitworkssection-tsx-update-the-cta-button-located-as-the-4th-button-in-section-4-of-the-page-matching-xpath-html-1-body-1-div-1-div-1-main-1-section-4-div-4-div-3-button-1-to-be-an-anchor-element-linking-to-https-livehostingtalents-com-apply-now-opening-in-a-new-tab-while-preserving-its-existing-label-and-styling",
+      "title": "In HowItWorksSection.tsx, update the CTA button (located as the 4th button in section 4 of the page, matching XPath /html[1]/body[1]/div[1]/div[1]/main[1]/section[4]/div[4]/div[3]/button[1]) to be an anchor element linking to 'https://livehostingtalents.com/apply-now/' opening in a new tab, while preserving its existing label and styling.",
       "reqIds": [
         "REQ-1"
       ],
@@ -16,7 +16,7 @@
     }
   ],
   "new_feature_requests": [],
-  "projectName": "Rename CTA button to 'Join 55028198 LHT 💖' with new invite link",
+  "projectName": "Update HowItWorksSection CTA button link to livehostingtalents.com/apply-now/",
   "clarification_mode": "instant",
   "clarification_rounds": 0
 }

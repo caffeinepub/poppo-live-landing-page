@@ -78,9 +78,14 @@ export default function HowItWorksSection() {
 
         {/* CTA */}
         <div className="text-center mt-16">
-          <button className="btn-gradient px-10 py-4 rounded-full text-white font-bold text-lg shadow-glow-lg hover:scale-105 transition-transform duration-200">
+          <a
+            href="https://livehostingtalents.com/apply-now/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-gradient inline-block px-10 py-4 rounded-full text-white font-bold text-lg shadow-glow-lg hover:scale-105 transition-transform duration-200"
+          >
             Start Your Journey →
-          </button>
+          </a>
         </div>
       </div>
     </section>

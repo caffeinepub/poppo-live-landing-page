@@ -1,10 +1,9 @@
 # Specification
 
 ## Summary
-**Goal:** Update the CTA button in AppPreviewSection to display a new label and link to a new invite URL.
+**Goal:** Update the CTA button in HowItWorksSection to link to the apply-now page.
 
 **Planned changes:**
-- In `AppPreviewSection.tsx`, change the "Become Poppo Agent" button text to "Join 55028198 LHT 💖"
-- Set the button's href to `https://invite-vone.com/Q8QN2D`, opening in a new tab
+- Convert the CTA button in `HowItWorksSection.tsx` to an anchor element linking to `https://livehostingtalents.com/apply-now/`, opening in a new tab, while preserving its existing label and styling.
 
-**User-visible outcome:** The CTA button in the App Preview section now reads "Join 55028198 LHT 💖" and takes users to the new invite link when clicked.
+**User-visible outcome:** Clicking the CTA button in the How It Works section navigates users to `https://livehostingtalents.com/apply-now/` in a new tab.
