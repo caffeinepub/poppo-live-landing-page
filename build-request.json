@@ -1,37 +1,75 @@
 {
   "kind": "build_request",
-  "title": "Update HowItWorksSection CTA button link to livehostingtalents.com/apply-now/",
+  "title": "Remove marked footer sections and add Privacy Policy page",
+  "projectName": "Poppo Live Agency",
   "priority": "normal",
   "requirements": [
     {
       "id": "REQ-1",
-      "text": "In HowItWorksSection.tsx, update the CTA button (located as the 4th button in section 4 of the page, matching XPath /html[1]/body[1]/div[1]/div[1]/main[1]/section[4]/div[4]/div[3]/button[1]) to be an anchor element linking to 'https://livehostingtalents.com/apply-now/' opening in a new tab, while preserving its existing label and styling.",
+      "text": "Remove all marked footer link columns from the Footer component. Specifically, remove the following sections entirely: the column at div[2] (with its h4 heading and all list items including li[1], li[3], li[4]), the column at div[3] (with its h4 heading and all list items including li[2], li[3], li[4]), the column at div[4] (with its h4 heading and all list items including li[1], li[2], li[4]), and the column at div[5] (with its h4 heading and all list items including li[2], li[3], li[4]). Clean up any remaining empty containers after removal.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-recent"
+          "msg-1"
         ],
         "quotes": [
-          "https//:livehostingtalents.com/apply-now/",
-          "Use this link in this button"
+          "Remove all that i have marked"
         ]
       },
       "acceptanceCriteria": [
-        "The CTA button in HowItWorksSection navigates to 'https://livehostingtalents.com/apply-now/' when clicked.",
-        "The link opens in a new tab (target='_blank' with rel='noopener noreferrer').",
-        "The button's existing visual appearance and label are unchanged.",
-        "No other buttons or links on the page are modified."
+        "All marked heading and list item elements under footer div[2]/div[1]/div[2], div[3], div[4], and div[5] are removed from the DOM",
+        "No empty column wrappers or orphaned headings remain in the footer navigation area",
+        "The footer still renders correctly with remaining content (logo, social icons, copyright)"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Create a Privacy Policy page as a new React component at frontend/src/components/PrivacyPolicy.tsx. The page should include standard privacy policy sections: Introduction, Information We Collect, How We Use Your Information, Data Sharing and Disclosure, Cookies, Data Retention, User Rights, Security, Children's Privacy, Changes to This Policy, and Contact Information. Style it consistently with the existing site theme (dark background, OKLCH color tokens, Poppins/Inter fonts, Tailwind classes). Include the Navbar and Footer.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "make a privacy policy"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A Privacy Policy page component exists and renders without errors",
+        "The page contains all standard privacy policy sections with readable body text",
+        "Visual styling (colors, fonts, spacing) is consistent with the rest of the site",
+        "The page includes the shared Navbar and Footer components"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Add a route or conditional rendering mechanism in App.tsx to display the Privacy Policy page. Add a 'Privacy Policy' link in the footer's bottom bar (near the copyright notice) that navigates to or reveals the Privacy Policy page.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "make a privacy policy"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A 'Privacy Policy' link is visible in the footer bottom bar",
+        "Clicking the link navigates to or renders the Privacy Policy page",
+        "Navigating back returns the user to the landing page"
       ]
     }
   ],
   "constraints": [
-    "Only modify the specific CTA button in HowItWorksSection.tsx matching the provided XPath.",
-    "Do not alter any other components or links."
+    "Do not modify any files under frontend/src/hooks/",
+    "Do not modify frontend/src/main.tsx",
+    "Do not modify any files under frontend/src/components/ui",
+    "Only remove the specifically marked elements — do not alter other footer content such as the logo, social media icons, or copyright notice"
   ],
   "nonGoals": [
-    "Changing any other buttons or links on the page.",
-    "Modifying backend logic.",
-    "Updating the AppPreviewSection or HeroSection CTA links."
+    "Adding a backend privacy policy storage or consent tracking system",
+    "Adding a cookie consent banner",
+    "Modifying any non-footer page sections (Hero, Features, HowItWorks, Stats, AppPreview)"
   ],
   "imageRequirements": {
     "required": [],

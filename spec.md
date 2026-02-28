@@ -1,9 +1,12 @@
 # Specification
 
 ## Summary
-**Goal:** Update the CTA button in HowItWorksSection to link to the apply-now page.
+**Goal:** Clean up the footer by removing marked link columns and add a Privacy Policy page accessible from the footer.
 
 **Planned changes:**
-- Convert the CTA button in `HowItWorksSection.tsx` to an anchor element linking to `https://livehostingtalents.com/apply-now/`, opening in a new tab, while preserving its existing label and styling.
+- Remove the four marked footer link columns (div[2] through div[5]) including their headings and list items, leaving only the logo, social icons, and copyright area
+- Create a new `PrivacyPolicy.tsx` component styled consistently with the site theme (dark background, Poppins/Inter fonts, Tailwind classes), including Navbar and Footer, with all standard privacy policy sections
+- Add routing in `App.tsx` to display the Privacy Policy page
+- Add a "Privacy Policy" link in the footer's bottom bar (near the copyright notice) that navigates to the Privacy Policy page
 
-**User-visible outcome:** Clicking the CTA button in the How It Works section navigates users to `https://livehostingtalents.com/apply-now/` in a new tab.
+**User-visible outcome:** The footer is simplified with no broken link columns, and users can click a "Privacy Policy" link in the footer to view a fully styled Privacy Policy page, then navigate back to the landing page.

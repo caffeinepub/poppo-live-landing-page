@@ -1,22 +1,59 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Update HowItWorksSection CTA button link to livehostingtalents.com/apply-now/",
+  "title": "Remove marked footer sections and add Privacy Policy page",
   "requirements": [
     {
       "id": "REQ-1",
-      "summary": "Update the CTA button in HowItWorksSection to link to 'https://livehostingtalents.com/apply-now/' in a new tab while preserving its existing label and styling",
+      "summary": "Remove all marked footer link columns from the Footer component",
       "acceptanceCriteria": [
-        "The CTA button in HowItWorksSection navigates to 'https://livehostingtalents.com/apply-now/' when clicked.",
-        "The link opens in a new tab (target='_blank' with rel='noopener noreferrer').",
-        "The button's existing visual appearance and label are unchanged.",
-        "No other buttons or links on the page are modified."
+        "All marked heading and list item elements under footer div[2]/div[1]/div[2], div[3], div[4], and div[5] are removed from the DOM",
+        "No empty column wrappers or orphaned headings remain in the footer navigation area",
+        "The footer still renders correctly with remaining content (logo, social icons, copyright)"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/HowItWorksSection.tsx",
+          "path": "frontend/src/components/Footer.tsx",
           "operation": "modify",
-          "description": "Convert the CTA button (4th button in section 4, matching XPath /html[1]/body[1]/div[1]/div[1]/main[1]/section[4]/div[4]/div[3]/button[1]) from a button element to an anchor element linking to 'https://livehostingtalents.com/apply-now/' with target='_blank' and rel='noopener noreferrer'. Preserve the button's existing label text and all styling classes to maintain its visual appearance."
+          "description": "Remove the specified footer link columns: column at div[2] (with h4 heading and list items including li[1], li[3], li[4]), column at div[3] (with h4 heading and list items including li[2], li[3], li[4]), column at div[4] (with h4 heading and list items including li[1], li[2], li[4]), and column at div[5] (with h4 heading and list items including li[2], li[3], li[4]). Clean up any empty containers after removal while preserving the logo, social media icons, and copyright notice."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Create a Privacy Policy page component with standard sections",
+      "acceptanceCriteria": [
+        "A Privacy Policy page component exists and renders without errors",
+        "The page contains all standard privacy policy sections with readable body text",
+        "Visual styling (colors, fonts, spacing) is consistent with the rest of the site",
+        "The page includes the shared Navbar and Footer components"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/PrivacyPolicy.tsx",
+          "operation": "create",
+          "description": "Create a new Privacy Policy page component that includes standard sections: Introduction, Information We Collect, How We Use Your Information, Data Sharing and Disclosure, Cookies, Data Retention, User Rights, Security, Children's Privacy, Changes to This Policy, and Contact Information. Style with dark background, OKLCH color tokens from the theme, Poppins/Inter fonts, and Tailwind utility classes. Include the Navbar and Footer components in the layout. Use consistent spacing, typography, and color scheme matching the existing site design."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Wire the Privacy Policy page into the app with routing and footer link",
+      "acceptanceCriteria": [
+        "A 'Privacy Policy' link is visible in the footer bottom bar",
+        "Clicking the link navigates to or renders the Privacy Policy page",
+        "Navigating back returns the user to the landing page"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add state or routing mechanism to conditionally display the Privacy Policy page. Implement navigation logic that allows toggling between the landing page (current content) and the Privacy Policy page. Ensure the component can handle navigation to and from the Privacy Policy page."
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Add a 'Privacy Policy' link in the footer's bottom bar near the copyright notice. The link should trigger navigation to the Privacy Policy page when clicked. Position it appropriately within the existing bottom bar layout."
         }
       ]
     }

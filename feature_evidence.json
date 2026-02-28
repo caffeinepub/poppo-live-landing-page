@@ -2,10 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-in-howitworkssection-tsx-update-the-cta-button-located-as-the-4th-button-in-section-4-of-the-page-matching-xpath-html-1-body-1-div-1-div-1-main-1-section-4-div-4-div-3-button-1-to-be-an-anchor-element-linking-to-https-livehostingtalents-com-apply-now-opening-in-a-new-tab-while-preserving-its-existing-label-and-styling",
-      "featureTitle": "In HowItWorksSection.tsx, update the CTA button (located as the 4th button in section 4 of the page, matching XPath /html[1]/body[1]/div[1]/div[1]/main[1]/section[4]/div[4]/div[3]/button[1]) to be an anchor element linking to 'https://livehostingtalents.com/apply-now/' opening in a new tab, while preserving its existing label and styling.",
+      "featureId": "feature-remove-all-marked-footer-link-columns-from-the-footer-component-specifically-remove-the-following-sections-entirely-the-column-at-div-2-with-its-h4-heading-and-all-list-items-including-li-1-li-3-li-4-the-column-at-div-3-with-its-h4-heading-and-all-list-items-including-li-2-li-3-li-4-the-column-at-div-4-with-its-h4-heading-and-all-list-items-including-li-1-li-2-li-4-and-the-column-at-div-5-with-its-h4-heading-and-all-list-items-including-li-2-li-3-li-4-clean-up-any-remaining-empty-containers-after-removal",
+      "featureTitle": "Remove all marked footer link columns from the Footer component. Specifically, remove the following sections entirely: the column at div[2] (with its h4 heading and all list items including li[1], li[3], li[4]), the column at div[3] (with its h4 heading and all list items including li[2], li[3], li[4]), the column at div[4] (with its h4 heading and all list items including li[1], li[2], li[4]), and the column at div[5] (with its h4 heading and all list items including li[2], li[3], li[4]). Clean up any remaining empty containers after removal.",
       "files": [
-        "frontend/src/components/HowItWorksSection.tsx"
+        "frontend/src/components/Footer.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -16,6 +16,43 @@
       ],
       "testIds": [
         "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-privacy-policy-page-as-a-new-react-component-at-frontend-src-components-privacypolicy-tsx-the-page-should-include-standard-privacy-policy-sections-introduction-information-we-collect-how-we-use-your-information-data-sharing-and-disclosure-cookies-data-retention-user-rights-security-children-s-privacy-changes-to-this-policy-and-contact-information-style-it-consistently-with-the-existing-site-theme-dark-background-oklch-color-tokens-poppins-inter-fonts-tailwind-classes-include-the-navbar-and-footer",
+      "featureTitle": "Create a Privacy Policy page as a new React component at frontend/src/components/PrivacyPolicy.tsx. The page should include standard privacy policy sections: Introduction, Information We Collect, How We Use Your Information, Data Sharing and Disclosure, Cookies, Data Retention, User Rights, Security, Children's Privacy, Changes to This Policy, and Contact Information. Style it consistently with the existing site theme (dark background, OKLCH color tokens, Poppins/Inter fonts, Tailwind classes). Include the Navbar and Footer.",
+      "files": [
+        "frontend/src/components/PrivacyPolicy.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-route-or-conditional-rendering-mechanism-in-app-tsx-to-display-the-privacy-policy-page-add-a-privacy-policy-link-in-the-footer-s-bottom-bar-near-the-copyright-notice-that-navigates-to-or-reveals-the-privacy-policy-page",
+      "featureTitle": "Add a route or conditional rendering mechanism in App.tsx to display the Privacy Policy page. Add a 'Privacy Policy' link in the footer's bottom bar (near the copyright notice) that navigates to or reveals the Privacy Policy page.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Footer.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
       ],
       "confidence": "high"
     }
